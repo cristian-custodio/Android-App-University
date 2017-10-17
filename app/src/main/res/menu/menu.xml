@@ -1,0 +1,47 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context = "com.cristiancustodio.usmapp.HomeActivity"
+
+    >
+
+
+
+
+
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/usmlogo3"
+
+        android:title="@mipmap/ic_launcher"
+        app:showAsAction="ifRoom" />
+
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_student_login"
+        android:checkable="false"
+        android:title="@string/Login"
+        app:showAsAction="never" />
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_admissions"
+        android:title="@string/Admissions"
+        app:showAsAction="never"
+        />
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/action_aboutUs"
+        android:title="@string/AboutUs"
+        app:showAsAction="never"
+        />
+
+
+
+
+
+
+
+</menu>

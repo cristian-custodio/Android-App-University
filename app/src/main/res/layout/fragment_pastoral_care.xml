@@ -1,0 +1,102 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cristiancustodio.usmapp.AssociateInMinistry">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Areas of Training"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:layout_below="@+id/textView5"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Deliverance, the Children’s Bread"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- How to Find your Purpose and Calling for your Life I"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Fathering, Family, Marriage and Children I"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Fathering, Family, Marriage and Children II"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- A Covenant of Commitment with God"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Counseling, Pastoral Care, and Love"
+                android:textColor="@android:color/black" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Introduction to Pastoral Care"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:text="The Certificate of Introduction to Pastoral Care is designed to train people to care for others. Many problems in society and in the church have to do with problems in the family, lack of commitment, not knowing their purpose in life, lack of wise counsel, and ignorance of the spiritual world. After completing this program you will be able to bring solutions for your life and for others."
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cristiancustodio.usmapp.InternshipActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/USMToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkerblue"
+        android:minHeight="60dp"
+        android:theme="@style/MainMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/android:Theme.Holo.Light"
+        app:title="@string/actionbarTitle"
+        app:titleTextColor="#ffffff"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/USMToolbar"
+        app:srcCompat="@drawable/internship" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supernatural Immersive Experience"
+        android:textColor="@color/darkerblue"
+        android:textSize="18sp"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="January 15 -26, 2018"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="June 3 - 15, 2018"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="It is a special opportunity to receive training from the top leadership of King Jesus International Ministry which will provide you with an immersive experience of preparation for ministerial service with an emphasis on the supernatural power of God."
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Today"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
