@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/action_home_bottom"
+        android:icon="@drawable/home_bottom_toolbar"
+        android:title=""
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_register_bottom"
+        android:icon="@drawable/register_bottom_bottom"
+
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_graduation_bottom"
+        android:icon="@drawable/graduation_bottom_toolbar"
+
+        android:title=""
+        app:showAsAction="always" />
+
+    <!-- several more items here... -->
+
+</menu>
+
+

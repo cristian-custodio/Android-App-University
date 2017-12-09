@@ -4,10 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cristiancustodio.usmapp.InternshipActivity">
+    tools:context=".InternshipActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/usmlogo_background4" />
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/USMToolbar"
+        android:id="@+id/internshipToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/darkerblue"
@@ -24,63 +31,65 @@
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/USMToolbar"
+        android:layout_below="@+id/internshipToolbar"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/internship" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:text="Supernatural Immersive Experience"
         android:textColor="@color/darkerblue"
         android:textSize="18sp"
-        android:layout_marginTop="28dp"
-        android:layout_below="@+id/imageView4"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="January 15 -26, 2018"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        android:layout_below="@+id/textView13"
-        android:layout_alignStart="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="June 3 - 15, 2018"
-        android:textColor="@android:color/black"
-        android:textSize="14sp"
-        android:layout_below="@+id/textView11"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="It is a special opportunity to receive training from the top leadership of King Jesus International Ministry which will provide you with an immersive experience of preparation for ministerial service with an emphasis on the supernatural power of God."
-        android:textColor="@android:color/black"
-        android:layout_below="@+id/textView8"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/darkerblue" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
         android:text="Apply Today"
         android:textColor="@color/colorPrimary"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_below="@+id/textView9"
-        android:layout_centerHorizontal="true" />
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/bottom_toolbarInternship"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/darkerblue"
+        android:elevation="4dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:onClick="InternshipPortalActivity"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/internship_form" />
 
 
 </RelativeLayout>

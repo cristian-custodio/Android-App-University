@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cristiancustodio.usmapp.AssociateCoursesActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/recyclerviewToolbar"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/darkerblue"
+        android:minHeight="60dp"
+        android:theme="@style/MainMenu"
+        app:popupTheme="@style/android:Theme.Holo.Light"
+        app:title="@string/actionbarTitle"
+        app:titleTextColor="#ffffff"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recyclerviewToolbar"
+        android:layout_marginBottom="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/bottomRecyclerToolbar"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/darkerblue"
+        android:elevation="4dp"
+        tools:layout_editor_absoluteY="603dp" />
+
+</RelativeLayout>

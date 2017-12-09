@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.cristiancustodio.usmapp.AcademicPrograms"
-    tools:layout_editor_absoluteY="25dp"
-    tools:layout_editor_absoluteX="0dp">
+    tools:context="com.cristiancustodio.usmapp.AcademicProgramsActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="25dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/usmlogo_background4" />
 
 
     <android.support.v7.widget.Toolbar
@@ -18,8 +26,9 @@
         android:background="@color/darkerblue"
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/MainMenu"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="USMApp"
         app:titleTextColor="#ffffff"
@@ -28,39 +37,41 @@
         tools:layout_constraintTop_creator="1" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout5"
         android:layout_width="0dp"
-        android:layout_height="551dp"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        android:layout_marginStart="8dp"
+        android:layout_height="0dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_toolbar_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/AcademicToolbar"
         tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent">
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
 
         <TextView
             android:id="@+id/certificateProgram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="11dp"
             android:text="Academic Programs"
             android:textColor="@color/darkerblue"
             android:textSize="24sp"
             android:textStyle="bold"
             tools:layout_editor_absoluteX="110dp"
-            tools:layout_editor_absoluteY="94dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+            tools:layout_editor_absoluteY="94dp" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_below="@+id/certificateProgram"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="10dp">
+            android:layout_below="@+id/certificateProgram"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/associateInMinistry"
@@ -86,17 +97,30 @@
 
         </LinearLayout>
 
+
         <fragment
             android:id="@+id/fragmentAcedemicPlaceholder"
             android:name="com.cristiancustodio.usmapp.AssociateInMinistry"
-            android:layout_width="400dp"
-            android:layout_height="385dp"
-            android:layout_weight="1"
-            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_alignParentStart="true"
-            android:layout_marginBottom="51dp" />
+            android:layout_below="@+id/linearLayout"
+            android:layout_weight="1" />
 
 
     </RelativeLayout>
+
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/bottom_toolbar_home"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/darkerblue"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout5" />
 
 </android.support.constraint.ConstraintLayout>

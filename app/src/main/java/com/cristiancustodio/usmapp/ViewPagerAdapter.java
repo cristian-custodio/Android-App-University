@@ -13,12 +13,14 @@ public class ViewPagerAdapter extends PagerAdapter{
 
     private Context context;
     private LayoutInflater layoutInflater;
-    private Integer [] images = {R.drawable.slidergraduation,R.drawable.biblereading,R.drawable.pcathy,R.drawable.dadpreaching,R.drawable.mompreaching,R.drawable.justinreading};
+    private Integer [] images= {R.drawable.slidergraduation,R.drawable.slidergraduation2,R.drawable.slidergraduation5,R.drawable.slidergraduation3,R.drawable.slidergraduation4};
 
 
     public ViewPagerAdapter(Context context) {
         this.context = context;
     }
+
+
 
     @Override
     public int getCount() {
@@ -37,6 +39,7 @@ public class ViewPagerAdapter extends PagerAdapter{
         View view = layoutInflater.inflate(R.layout.custom_layout, null);
         ImageView imageView = (ImageView) view.findViewById(R.id.imageView);
         imageView.setImageResource(images[position]);
+        //imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
         ViewPager vp = (ViewPager) container;
         vp.addView(view, 0);

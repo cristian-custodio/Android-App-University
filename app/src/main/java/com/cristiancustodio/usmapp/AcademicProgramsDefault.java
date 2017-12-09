@@ -16,7 +16,9 @@ import android.view.ViewGroup;
                                  Bundle savedInstanceState) {
             // Inflate the layout for this fragment
             return inflater.inflate(R.layout.fragment_academic_program, container, false);
+
         }
+
     }
 
 

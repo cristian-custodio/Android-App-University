@@ -6,8 +6,15 @@
     android:layout_height="match_parent"
     tools:context="com.cristiancustodio.usmapp.InternshipActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitEnd"
+        android:src="@drawable/usmlogo_background4" />
+
     <android.support.v7.widget.Toolbar
-        android:id="@+id/USMToolbar"
+        android:id="@+id/internshipToolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/darkerblue"
@@ -26,41 +33,51 @@
         android:layout_width="match_parent"
         android:layout_height="256dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/USMToolbar"
+        android:layout_below="@+id/internshipToolbar"
+        android:scaleType="centerCrop"
         app:srcCompat="@drawable/univeristybuilding" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
         android:text="Non-Credit Courses"
         android:textColor="@color/darkerblue"
-        android:textSize="18sp"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignStart="@+id/textView13" />
+        android:textSize="24sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView9"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:text="The University invites you to audit our courses and begin to learn to walk in the Supernatural Power of God."
-        android:textColor="@android:color/black"
         android:layout_below="@+id/textView8"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
+        android:layout_marginTop="10dp"
+        android:text="The University invites you to audit our courses and begin to learn to walk in the Supernatural Power of God."
+        android:textColor="@color/darkerblue" />
 
-    <TextView
-        android:id="@+id/textView13"
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/bottom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:backgroundTint="@color/darkerblue"/>
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Register Today"
-        android:textColor="@color/colorPrimary"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="11dp"
         android:layout_below="@+id/textView9"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="9dp"
+        android:backgroundTint="@color/darkerblue"
+        android:onClick="nonCreditLink"
+        android:text="Register Today" />
 
 </RelativeLayout>

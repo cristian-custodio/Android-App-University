@@ -1,12 +1,41 @@
 <resources>
 
     <!-- Base application theme. -->
+
+
+
+
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        android:theme="@style/AppTheme"
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
 
+
+
+
+    </style>
+    <style name="MyActionButtonStyle" parent="AppTheme">
+        <item name="android:minWidth">115dip</item>
+        <item name="android:padding">0dip</item>
+
+
+    </style>
+
+
+    <style name="CustomActionBarStyle" parent="android:style/Widget.Holo.ActionBar">
+        <item name="android:titleTextStyle">@style/NoTitleText</item>
+        <item name="android:subtitleTextStyle">@style/NoTitleText</item>
+
+
+    </style>
+
+    <style name="NoTitleText">
+        <item name="android:textSize">0sp</item>
+        <item name="android:textColor">#00000000</item>
 
 
     </style>
@@ -14,6 +43,7 @@
 
     <style name="MainMenu" parent="Theme.AppCompat.NoActionBar">
         <item name="android:textColorSecondary">@color/white</item>
+
     </style>
 
 
@@ -21,5 +51,16 @@
         <item name="android:windowBackground">@drawable/background_splash</item>
 
     </style>
+
+
+
+
+//ViewPager Dots
+
+
+
+
+
+
 
 </resources>

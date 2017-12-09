@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cristiancustodio.usmapp.AdmissionsActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/admissionsToolbar"
+        android:scaleType="fitCenter"
+        android:src="@drawable/usmlogo_background4" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/admissionsToolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="Associates Degree Audit"
+        android:textColor="@color/darkerblue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/admissionsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkerblue"
+        android:minHeight="60dp"
+        android:theme="@style/MainMenu"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/android:Theme.Holo.Light"
+        app:title="@string/actionbarTitle"
+        app:titleTextColor="#ffffff"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Please select the courses you have completed in order to generate the degree audit."
+        android:textAlignment="center"
+        android:textColor="@color/darkerblue" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView14"
+        android:layout_marginBottom="100dp"
+        android:layout_marginLeft="30dp"
+
+        android:layout_marginTop="26dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/classCategory1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Supernatural Ministry"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/sup101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 101 - Revelation and Power of the Work of Jesus Christ on the Cross I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup201"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 201 - Revelation and Power of the Work of Jesus Christ on the Cross II"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup110"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 110 - Revelation and Power of the Resurrection of Jesus Christ"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 120 - Faith I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup220"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 220 - Faith II"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 130 - Prayer I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup230"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 230 - Prayer II"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup140"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 140 - Evangelism with Miracles I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup260"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 260 - Evangelism with Miracles II"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 210 - Inner Hearling and Deliverance"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup240"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 240 - Divine Health and Healing"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup250"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 250 - How to Walk in the Supernatural Power of God I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/sup350"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="SUP 350 - How to Walk in the Supernatural Power of God II"
+                android:textColor="@color/darkerblue" />
+
+            <TextView
+                android:id="@+id/classCategory2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kingdom, Power and Glory"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/kpg101"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="KPG 101 - The Apostolic Vision of the House I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/kpg201"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="KPG 201 - The Apostolic Vision of the House II"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/kpg210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="KPG 210 - Kingdom Economic Principle"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/kpg330"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="KPG 330 - Kingdom Advancement through Missions"
+                android:textColor="@color/darkerblue" />
+
+            <TextView
+                android:id="@+id/classCategory3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal and Ministerial Identity"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/pmi110"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="PMI 110 - Introduction to the Five-fold Ministry"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/pmi120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="PMI 120 - The Formation of the Character and Ministry of a Leader I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/pmi130"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="PMI 130 - How to Find your Purpose and Calling for your Life I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/pmi210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="PMI 210 - Fathering, Family, Marriage and Children I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/pmi220"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="PMI 220 - Transformtion through the Renewing of the Mind"
+                android:textColor="@color/darkerblue" />
+
+            <TextView
+                android:id="@+id/classCategory4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="General Education"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/ged260"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="GED 260 - The Three Pillars of Health Diet, Exercise and Rest I"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/ged220"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="GED 220 - English Composition"
+                android:textColor="@color/darkerblue" />
+
+            <TextView
+                android:id="@+id/classCategory5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Revelation and Knowledge of God"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/rkg210"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="RKG 210 - How to Hear the Voice of God"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/rkg310"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="RKG 310 - The Holy Spirit in the Now I"
+                android:textColor="@color/darkerblue" />
+
+            <TextView
+                android:id="@+id/classCategory6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biblical Revelation"
+                android:textColor="@color/darkerblue"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <CheckBox
+                android:id="@+id/brv103"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="BRV 103 - How to Study the Bible"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/brv120"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="BRV 120 - Foundation of the Christian Faith"
+                android:textColor="@color/darkerblue" />
+
+            <CheckBox
+                android:id="@+id/brv220"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimary"
+                android:onClick="onCheckboxClicked"
+                android:text="BRV 220 - Preaching the Gospel of the Kingdom with Revelation and Authority"
+                android:textColor="@color/darkerblue" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="29dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/darkerblue"
+            android:onClick="generateReportButton"
+            android:text="Generate Degree Audit" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

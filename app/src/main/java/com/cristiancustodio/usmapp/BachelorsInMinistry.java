@@ -13,4 +13,7 @@ public class BachelorsInMinistry extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_bachelors_in_ministry, container, false);
     }
+
+
+
 }
