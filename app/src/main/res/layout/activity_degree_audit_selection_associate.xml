@@ -61,7 +61,7 @@
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView14"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="150dp"
         android:layout_marginLeft="30dp"
 
         android:layout_marginTop="26dp">
@@ -396,7 +396,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="29dp"
+        android:layout_marginBottom="80dp"
         android:orientation="horizontal">
 
         <Button
@@ -410,6 +410,15 @@
             android:text="Generate Degree Audit" />
 
     </LinearLayout>
+
+    <android.support.v7.widget.ActionMenuView
+        android:id="@+id/bottom_toolbar_Associate_Degree"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/darkerblue"
+        android:elevation="4dp" />
 
 
 </RelativeLayout>

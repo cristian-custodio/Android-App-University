@@ -11,12 +11,20 @@
 
 
     <!-- "Mark Favorite", should appear as action button if possible -->
+
+
+
     <item
         android:id="@+id/action_home"
         android:icon="@drawable/usmlogo3"
 
         android:title="@mipmap/ic_launcher"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="ifRoom"
+
+
+
+        />
+
 
     <!-- Settings, should always be in the overflow -->
     <item

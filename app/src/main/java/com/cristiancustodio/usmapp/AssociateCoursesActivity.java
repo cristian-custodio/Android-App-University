@@ -54,12 +54,12 @@ public class AssociateCoursesActivity extends AppCompatActivity {
         AssociateListItem associateListItem11 = new AssociateListItem("SUP 240 - Divine Health and Healing", "3 Credits");
         AssociateListItem associateListItem12 = new AssociateListItem("SUP 250 - How to Walk in the Supernatural Power of God I", "2 Credits");
         AssociateListItem associateListItem13 = new AssociateListItem("SUP 350 - How to walk in the Supernatural Power of God II", "2 Credits");
-        AssociateListItem associateListItem14 = new AssociateListItem("KPG 101 - The Apostolic Vision fo the House", "2 Credits");
+        AssociateListItem associateListItem14 = new AssociateListItem("KPG 101 - The Apostolic Vision of the House I", "2 Credits");
         AssociateListItem associateListItem15 = new AssociateListItem("KPG 201 - The Apostolic Vision of the House II", "3 Credits");
         AssociateListItem associateListItem16 = new AssociateListItem("KPG 210 - Kingdom Economic Principles", "3 Credits");
         AssociateListItem associateListItem17 = new AssociateListItem("KPG 330 - Kingdom Advancement Through Missions", "0 Credits");
         AssociateListItem associateListItem18 = new AssociateListItem("PMI 110 - Introduction to the Five Fold Ministry", "2 Credits");
-        AssociateListItem associateListItem19 = new AssociateListItem("PMI 120 - The Formation of Character and Ministry of a Leader I", "3 Credits");
+        AssociateListItem associateListItem19 = new AssociateListItem("PMI 120 - The Formation of the Character and Ministry of a Leader I", "3 Credits");
         AssociateListItem associateListItem20 = new AssociateListItem("PMI 130 - How to Find your Purpose and Calling for your Life I", "2 Credits");
         AssociateListItem associateListItem21 = new AssociateListItem("PMI 210 - Fathering, Family, Marriage and Children I", "2 Credits");
         AssociateListItem associateListItem22 = new AssociateListItem("PMI 220 - Transformation through the Renewing of the Mind", "3 Credits");

@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.ActionMenuView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
@@ -54,6 +55,18 @@ public class DegreeAuditSelectionAssociateActivity extends AppCompatActivity {
     //Inflate the action bar menu options
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.menu, menu);
+        // Inflate and initialize the bottom menu
+        ActionMenuView bottomBar = (ActionMenuView)findViewById(R.id.bottom_toolbar_Associate_Degree);
+        Menu bottomMenu = bottomBar.getMenu();
+        getMenuInflater().inflate(R.menu.menu_botttom, bottomMenu);
+        for (int i = 0; i < bottomMenu.size(); i++) {
+            bottomMenu.getItem(i).setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                @Override
+                public boolean onMenuItemClick(MenuItem item) {
+                    return onOptionsItemSelected(item);
+                }
+            });
+        }
         return true;
     }
     //Actionbar Link Options
@@ -72,8 +85,23 @@ public class DegreeAuditSelectionAssociateActivity extends AppCompatActivity {
                 return true;
 
             case R.id.action_admissions:
-                Intent intent3 = new Intent(this, DegreeAuditSelectionActivity.class);
+                Intent intent3 = new Intent(this, AdmissionsActivity.class);
                 startActivity(intent3);
+                return true;
+
+            case R.id.action_home_bottom:
+                Intent intent4 = new Intent(this, HomeActivity.class);
+                startActivity(intent4);
+                return true;
+
+            case R.id.action_register_bottom:
+                Intent intent5 = new Intent(this, AdmissionApplicationActivity.class);
+                startActivity(intent5);
+                return true;
+
+            case R.id.action_graduation_bottom:
+                Intent intent6 = new Intent(this, DegreeAuditSelectionActivity.class);
+                startActivity(intent6);
                 return true;
 
             //case R.id.action_aboutUs:
